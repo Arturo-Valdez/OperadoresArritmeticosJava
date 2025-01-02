@@ -6,8 +6,8 @@ public class EjercicioAutenticacion {
         System.out.println("*** Sistema de Autenticacion ***");
 
         //Credenciales autorizadas
-        final var usuario = "admin";
-        final var pass = "admin123";
+        final var USUARIO = "admin";
+        final var PASS = "admin123";
 
         System.out.print("Ingresa el usuario: ");
         var autUsuario = consola.nextLine();
@@ -16,7 +16,7 @@ public class EjercicioAutenticacion {
         var autPass = consola.nextLine();
 
         //Validacion que los valores sean iguales
-        var autenticador = autUsuario.equals(usuario) && autPass.equals(pass);
+        var autenticador = autUsuario.equals(USUARIO) && autPass.equals(PASS);
         System.out.println("Los datos son correctos?: " + autenticador);
 
 
